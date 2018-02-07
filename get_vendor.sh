@@ -11,7 +11,7 @@ FIRMWARE="/etc/firmware/"
 #
 # wmt_loader init kernel device modules, and loades a driver for /dev/stpwmt, then
 # 6620_launcher load a firmware to the CPU using /dev/stpwmt.
-# mt6572_82_patch_e1_0_hdr.bin, mt6572_82_patch_e1_1_hdr.bin - wifi firmware.
+# ROMv1_patch_1_0_hdr.bin, ROMv1_patch_1_0_hdr.bin - wifi firmware.
 #
 WIFI="/etc/wifi/ /bin/6620_wmt_lpbk /bin/6620_launcher /bin/6620_wmt_concurrency /bin/wmt_loader"
 
@@ -19,7 +19,7 @@ WIFI="/etc/wifi/ /bin/6620_wmt_lpbk /bin/6620_launcher /bin/6620_wmt_concurrency
 # gralloc && hwcomposer - hardware layer. rest is userspace lib.so layer.
 #
 GL="/lib/egl/libGLESv1_CM_mali.so /lib/egl/libGLESv2_mali.so /lib/egl/libEGL_mali.so \
-/lib/libm4u.so /lib/hw/hwcomposer.mt6592.so /lib/hw/gralloc.mt6592.so \
+/lib/libm4u.so /lib/hw/hwcomposer.mt6572.so /lib/hw/gralloc.mt6572.so \
 /lib/libdpframework.so /lib/libion.so /lib/libMali.so"
 
 #
